@@ -330,7 +330,7 @@
 			<xs:element name="pipelineInfo" type="aces:pipelineInfoType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="inputTransform" type="aces:inputTransformType" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="lookTransform" type="aces:lookTransformType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="outputTransform" type="aces:outputTransformType" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="outputTransform" type="aces:outputTransformType" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
 
