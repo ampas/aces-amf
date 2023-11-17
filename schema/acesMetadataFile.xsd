@@ -58,6 +58,8 @@
 		</xs:simpleContent>
 	</xs:complexType>
 
+	<xs:complexType name="emptyType"/>
+
 	<!-- Define transform name types -->
 	<xs:simpleType name="tnLookTransform">
 		<xs:restriction base="xs:string">
@@ -329,8 +331,11 @@
 		<xs:sequence>
 			<xs:element name="pipelineInfo" type="aces:pipelineInfoType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="inputTransform" type="aces:inputTransformType" minOccurs="0" maxOccurs="1"/>
-			<xs:element name="lookTransform" type="aces:lookTransformType" minOccurs="0" maxOccurs="unbounded" />
-			<xs:element name="outputTransform" type="aces:outputTransformType" minOccurs="1" maxOccurs="1"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="workingLocation" type="aces:emptyType" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="lookTransform" type="aces:lookTransformType" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:element name="outputTransform" type="aces:outputTransformType" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
 
