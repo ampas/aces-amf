@@ -311,7 +311,7 @@
 			<xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="author" type="aces:authorType" minOccurs="0" maxOccurs="unbounded"/>
 			<xs:element name="dateTime" type="aces:dateTimeType" minOccurs="1" maxOccurs="1"/>
-			<xs:element name="uuid" type="dcml:UUIDType" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="uuid" type="dcml:UUIDType" minOccurs="1" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
 
