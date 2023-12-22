@@ -67,7 +67,7 @@
 
 	<xs:simpleType name="tnInputTransform">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="urn:ampas:aces:transformId:v1.5:IDT\.\S+\.\S+\.a\d+\.v\d+"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(IDT\.\S+\.\S+\.a\d+\.v\d+|ACEScsc\.\S+\.a\d+\.\d+\.\d+)"/>
 		</xs:restriction>
 	</xs:simpleType>
 
