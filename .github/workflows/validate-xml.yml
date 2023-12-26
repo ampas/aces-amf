@@ -1,0 +1,24 @@
+name: Validate AMF Schema and Examples
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Install xmllint
+      run: sudo apt-get install -y libxml2-utils
+
+    - name: Validate XML Files
+      run: |
+        for file in examples/*.amf; do
+          xmllint --noout --schema schema/acesMetadataFile.xsd $file
+        done
