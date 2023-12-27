@@ -333,14 +333,10 @@
 		<xs:sequence>
 			<xs:element name="pipelineInfo" type="aces:pipelineInfoType" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="inputTransform" type="aces:inputTransformType" minOccurs="0" maxOccurs="1"/>
-<<<<<<< HEAD
-			<xs:element name="lookTransform" type="aces:lookTransformType" minOccurs="0" maxOccurs="unbounded" />
-=======
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element name="workingLocation" type="aces:emptyType" minOccurs="0" maxOccurs="1"/>
 				<xs:element name="lookTransform" type="aces:lookTransformType" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:choice>
->>>>>>> refs/rewritten/v2-updates-workingLocation
 			<xs:element name="outputTransform" type="aces:outputTransformType" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
