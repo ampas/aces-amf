@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aces:acesMetadataFile version="1.0" xmlns:aces="urn:ampas:aces:amf:v1.0">
+<aces:acesMetadataFile version="1.0" xmlns:aces="urn:ampas:aces:amf:v2.0">
     <aces:amfInfo>
         <aces:dateTime>
             <aces:creationDateTime>2023-08-15T08:00:00-07:00</aces:creationDateTime>
