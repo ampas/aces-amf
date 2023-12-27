@@ -1,6 +1,6 @@
 ## ACES Metadata File (AMF) ##
 
-![GitHub release (with filter)](https://img.shields.io/github/v/release/ampas/aces-amf) [![CLA assistant](https://cla-assistant.io/readme/badge/ampas/aces-amf)](https://cla-assistant.io/ampas/aces-amf)
+![AMF Schema and Example Validation](https://github.com/ampas/aces-amf/actions/workflows/validate-xml.yml/badge.svg?event=push) ![GitHub release (with filter)](https://img.shields.io/github/v/release/ampas/aces-amf) [![CLA assistant](https://cla-assistant.io/readme/badge/ampas/aces-amf)](https://cla-assistant.io/ampas/aces-amf)
 
 The ACES Metadata File ("AMF") is a sidecar XML file intended to exchange the metadata required to recreate ACES viewing pipelines. It describes the transforms necessary to configure an ACES viewing pipeline for a collection of related image files.
 
