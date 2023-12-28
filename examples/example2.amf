@@ -55,7 +55,7 @@
                     <cdl:Saturation>1</cdl:Saturation>
                 </cdl:ASC_SAT>
         </aces:lookTransform>
-        <aces:outputTransform>
+        <aces:outputTransform applied="false">
             <aces:referenceRenderingTransform>
                 <aces:description>ACES v1.0.3 RRT</aces:description>
                 <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>

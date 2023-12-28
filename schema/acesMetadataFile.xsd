@@ -143,7 +143,6 @@
 			<xs:element name="description" type="xs:string" minOccurs="0" maxOccurs="1"/>
 			<xs:element name="hash" type="aces:hashType" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
-		<xs:attribute name="applied" type="xs:boolean" use="required"/>
 	</xs:complexType>
 
 	<xs:complexType name="inputTransformType">
@@ -165,6 +164,7 @@
 						</xs:sequence>
 					</xs:choice>
 				</xs:choice>
+				<xs:attribute name="applied" type="xs:boolean" use="required"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -231,6 +231,7 @@
 						<xs:element name="outputDeviceTransform" type="aces:outputDeviceTransformType" minOccurs="1" maxOccurs="1"/>
 					</xs:sequence>
 				</xs:choice>
+				<xs:attribute name="applied" type="xs:boolean" use="required"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -291,6 +292,7 @@
 						</xs:sequence>
 					</xs:choice>
 				</xs:sequence>
+				<xs:attribute name="applied" type="xs:boolean" use="required"/>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
