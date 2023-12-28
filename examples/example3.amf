@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aces:acesMetadataFile 
-    xmlns:aces="urn:ampas:aces:amf:v1.0"
-    xsi:schemaLocation="urn:ampas:aces:amf:v1.0 file:acesMetadataFile.xsd"
+    xmlns:aces="urn:ampas:aces:amf:v2.0"
     xmlns:cdl="urn:ASC:CDL:v1.01"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    version="1.0">
+    version="2.0">
     <aces:amfInfo>
         <aces:description>Exmaple Movie</aces:description>
         <aces:author>
@@ -65,7 +64,7 @@
             <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</aces:hash>
             <aces:transformId>urn:ampas:aces:transformId:v1.5:LMT.ACME.AcmeDILook.a1.v5</aces:transformId>
         </aces:lookTransform>
-        <aces:outputTransform>
+        <aces:outputTransform applied="false">
             <aces:referenceRenderingTransform>
                 <aces:description>ACES v1.0.3 RRT</aces:description>
                 <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>
@@ -118,7 +117,7 @@
             <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855</aces:hash>
             <aces:transformId>urn:ampas:aces:transformId:v1.5:LMT.ACME.AcmeDILook.a1.v5</aces:transformId>
         </aces:lookTransform>
-        <aces:outputTransform>
+        <aces:outputTransform applied="false">
             <aces:description>Some HDR Output Transform</aces:description>
             <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">9ffcd28772e244f9a3c6e9893f499f2b4f2f3313d292db51aeea4fd3f65f00d9</aces:hash>
             <aces:transformId>urn:ampas:aces:transformId:v1.5:RRTODT.Acme.HDRODT.a1.v3</aces:transformId>
