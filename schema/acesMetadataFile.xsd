@@ -350,7 +350,7 @@
 				<xs:element name="pipeline" type="aces:pipelineType" minOccurs="1" maxOccurs="1"/>
 				<xs:element name="archivedPipeline" type="aces:pipelineType" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:sequence>
-			<xs:attribute name="version" type="xs:decimal" use="required" fixed="1.0"/>
+			<xs:attribute name="version" type="xs:decimal" use="required" fixed="2.0"/>
 		</xs:complexType>
 	</xs:element>
 

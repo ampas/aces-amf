@@ -3,7 +3,7 @@
     xmlns:aces="urn:ampas:aces:amf:v2.0"
     xmlns:cdl="urn:ASC:CDL:v1.01"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    version="1.0">
+    version="2.0">
     <aces:amfInfo>
         <aces:description>Example Movie</aces:description>
         <aces:author>
@@ -43,6 +43,7 @@
                 <aces:transformId>urn:ampas:aces:transformId:v1.5:InvRRT.a1.0.3</aces:transformId>
             </aces:inverseReferenceRenderingTransform>
         </aces:inputTransform>
+        <aces:workingLocation/>
         <aces:lookTransform applied="false">
             <aces:description>Technical Grade</aces:description>
             <aces:cdlWorkingSpace>
@@ -59,8 +60,11 @@
                 <cdl:Saturation>1</cdl:Saturation>
             </cdl:ASC_SAT>
         </aces:lookTransform>
-        <workLocation/>
-        <aces:outputTransform>
+        <aces:lookTransform applied="false">
+            <aces:description>Show Look</aces:description>
+            <aces:file>showLook.clf</aces:file>
+        </aces:lookTransform>
+        <aces:outputTransform applied="false">
             <aces:referenceRenderingTransform>
                 <aces:description>ACES v1.0.3 RRT</aces:description>
                 <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>

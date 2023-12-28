@@ -3,7 +3,7 @@
     xmlns:aces="urn:ampas:aces:amf:v2.0"
     xmlns:cdl="urn:ASC:CDL:v1.01"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    version="1.0">
+    version="2.0">
     <aces:amfInfo>
         <aces:description>Example Movie</aces:description>
         <aces:author>

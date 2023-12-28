@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aces:acesMetadataFile 
+<aces:acesMetadataFile
     xmlns:aces="urn:ampas:aces:amf:v2.0"
     xmlns:cdl="urn:ASC:CDL:v1.01"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -34,28 +34,37 @@
                 <aces:patchVersion>3</aces:patchVersion>
             </aces:systemVersion>
         </aces:pipelineInfo>
-        <aces:inputTransform applied="true">
-            <aces:description>IDT from Acme Camera Company</aces:description>
-            <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">1531ea6ef06c5b0a5bea80c94f60c7b68e3989e3c90b8ebd25c28aa4670c30f8</aces:hash>
-            <aces:transformId>urn:ampas:aces:transformId:v1.5:IDT.Acme.Camera.a1.v1</aces:transformId>
+        <aces:inputTransform applied="false">
+            <aces:description>Inverse ODT and RRT used to import output referred data</aces:description>
+            <aces:inverseOutputDeviceTransform>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:InvODT.Academy.Rec709_100nits_dim.a1.0.3</aces:transformId>
+            </aces:inverseOutputDeviceTransform>
+            <aces:inverseReferenceRenderingTransform>
+                <aces:transformId>urn:ampas:aces:transformId:v1.5:InvRRT.a1.0.3</aces:transformId>
+            </aces:inverseReferenceRenderingTransform>
         </aces:inputTransform>
-        <aces:lookTransform applied="true">
-                <aces:description>Technical Grade</aces:description>
-                <aces:cdlWorkingSpace>
-                    <aces:fromCdlWorkingSpace>
-                        <aces:transformId>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformId>
-                    </aces:fromCdlWorkingSpace>
-                </aces:cdlWorkingSpace>
-                <cdl:ASC_SOP>
-                    <cdl:Slope>2.0 2.0 2.0</cdl:Slope>
-                    <cdl:Offset>0.1 0.1 0.1</cdl:Offset>
-                    <cdl:Power>1 1 1</cdl:Power>
-                </cdl:ASC_SOP>
-                <cdl:ASC_SAT>
-                    <cdl:Saturation>1</cdl:Saturation>
-                </cdl:ASC_SAT>
+        <aces:workingLocation/>
+        <aces:lookTransform applied="false">
+            <aces:description>Technical Grade</aces:description>
+            <aces:cdlWorkingSpace>
+                <aces:fromCdlWorkingSpace>
+                    <aces:transformId>urn:ampas:aces:transformId:v1.5:ACEScsc.Academy.ACEScct_to_ACES.a1.0.3</aces:transformId>
+                </aces:fromCdlWorkingSpace>
+            </aces:cdlWorkingSpace>
+            <cdl:ASC_SOP>
+                <cdl:Slope>2.0 2.0 2.0</cdl:Slope>
+                <cdl:Offset>0.1 0.1 0.1</cdl:Offset>
+                <cdl:Power>1 1 1</cdl:Power>
+            </cdl:ASC_SOP>
+            <cdl:ASC_SAT>
+                <cdl:Saturation>1</cdl:Saturation>
+            </cdl:ASC_SAT>
         </aces:lookTransform>
-        <aces:outputTransform>
+        <aces:lookTransform applied="false">
+            <aces:description>Show Look</aces:description>
+            <aces:file>showLook.clf</aces:file>
+        </aces:lookTransform>
+        <aces:outputTransform applied="false">
             <aces:referenceRenderingTransform>
                 <aces:description>ACES v1.0.3 RRT</aces:description>
                 <aces:hash algorithm="http://www.w3.org/2001/04/xmlenc#sha256">c81af4fb4a22ee0353308e4582708951df4682bf73f838c24bf44e585fc3bb61</aces:hash>
