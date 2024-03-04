@@ -12,10 +12,12 @@ jobs:
 
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Install xmllint
-      run: sudo apt-get install -y libxml2-utils
+      run: |
+        sudo apt-get update 
+        sudo apt-get install -y libxml2-utils
 
     - name: Validate XML Files
       run: |
