@@ -64,12 +64,14 @@
 	<xs:simpleType name="tnLookTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(LMT\.\S+\.\S+\.a\d+\.v\d+|LMT\.Academy\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:Look\.\S+\.\S+\.a\d+\.v\d+"/>
 		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:simpleType name="tnInputTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(IDT\.\S+\.\S+\.a\d+\.v\d+|ACEScsc\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:(Input\.\S+\.\S+\.a\d+\.v\d+|CSC\.\S+\.a\d+\.v\d+)"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -82,18 +84,21 @@
 	<xs:simpleType name="tnInverseOutputDeviceTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(InvODT\.\S+\.\S+\.a\d+\.v\d+|InvODT\.Academy\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:InvOutput\.\S+\.\S+\.a\d+\.v\d+"/>
 		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:simpleType name="tnOutputTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(RRTODT\.\S+\.\S+\.a\d+\.v\d+|RRTODT\.Academy\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:Output\.\S+\.\S+\.a\d+\.v\d+"/>
 		</xs:restriction>
 	</xs:simpleType>
 	
 	<xs:simpleType name="tnInverseOutputTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(InvRRTODT\.\S+\.\S+\.a\d+\.v\d+|InvRRTODT\.Academy\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:InvOutput\.\S+\.\S+\.a\d+\.v\d+"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -112,6 +117,7 @@
 	<xs:simpleType name="tnColorSpaceConversionTransform">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="urn:ampas:aces:transformId:v1.5:(ACEScsc\.\S+\.\S+\.a\d+\.v\d+|ACEScsc\.Academy\.\S+\.a\d+\.\d+\.\d+)"/>
+			<xs:pattern value="urn:ampas:aces:transformId:v2.0:CSC\.\S+\.\S+\.a\d+\.v\d+"/>
 		</xs:restriction>
 	</xs:simpleType>
 	
