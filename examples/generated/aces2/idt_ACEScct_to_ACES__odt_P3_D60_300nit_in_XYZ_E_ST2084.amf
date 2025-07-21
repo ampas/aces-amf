@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdl="urn:ASC:CDL:v1.01" version="2.0">
+    <aces:amfInfo>
+        <aces:description>AMF for ACEScct to ACES2065-1 with DCDM (300 nit P3-D60 Limited)</aces:description>
+        <aces:author>
+            <aces:name>AMF Generator Script</aces:name>
+            <aces:emailAddress>amf.generator@example.com</aces:emailAddress>
+        </aces:author>
+        <aces:dateTime>
+            <aces:creationDateTime>2025-07-21T19:31:48.67Z</aces:creationDateTime>
+            <aces:modificationDateTime>2025-07-21T19:31:48.67Z</aces:modificationDateTime>
+        </aces:dateTime>
+        <aces:uuid>urn:uuid:024355c6-f2bc-439c-baea-f85bd87c0f04</aces:uuid>
+    </aces:amfInfo>
+    <aces:pipeline>
+        <aces:pipelineInfo>
+            <aces:dateTime>
+                <aces:creationDateTime>2025-07-21T19:31:48.67Z</aces:creationDateTime>
+                <aces:modificationDateTime>2025-07-21T19:31:48.67Z</aces:modificationDateTime>
+            </aces:dateTime>
+            <aces:uuid>urn:uuid:62783d74-ae12-4671-954d-8563c8d28b0a</aces:uuid>
+            <aces:systemVersion>
+                <aces:majorVersion>2</aces:majorVersion>
+                <aces:minorVersion>0</aces:minorVersion>
+                <aces:patchVersion>0</aces:patchVersion>
+            </aces:systemVersion>
+        </aces:pipelineInfo>
+        <aces:inputTransform applied="false">
+            <aces:description>ACEScct to ACES2065-1</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:CSC.Academy.ACEScct_to_ACES.a2.v1</aces:transformId>
+        </aces:inputTransform>
+        <aces:outputTransform applied="false">
+            <aces:description>DCDM (300 nit P3-D60 Limited)</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:Output.Academy.P3-D60_300nit_in_XYZ-E_ST2084.a2.v1</aces:transformId>
+        </aces:outputTransform>
+    </aces:pipeline>
+</aces:acesMetadataFile>
