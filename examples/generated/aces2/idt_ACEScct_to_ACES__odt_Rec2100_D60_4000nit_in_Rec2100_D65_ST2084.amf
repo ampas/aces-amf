@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdl="urn:ASC:CDL:v1.01" version="2.0">
+    <aces:amfInfo>
+        <aces:description>AMF for ACEScct to ACES2065-1 with Rec.2100 ST2084 (4000 nit) (D60 simulation)</aces:description>
+        <aces:author>
+            <aces:name>AMF Generator Script</aces:name>
+            <aces:emailAddress>amf.generator@example.com</aces:emailAddress>
+        </aces:author>
+        <aces:dateTime>
+            <aces:creationDateTime>2025-07-21T19:31:48.75Z</aces:creationDateTime>
+            <aces:modificationDateTime>2025-07-21T19:31:48.75Z</aces:modificationDateTime>
+        </aces:dateTime>
+        <aces:uuid>urn:uuid:109323a8-cafd-49c9-9cb2-0299203bcbc0</aces:uuid>
+    </aces:amfInfo>
+    <aces:pipeline>
+        <aces:pipelineInfo>
+            <aces:dateTime>
+                <aces:creationDateTime>2025-07-21T19:31:48.75Z</aces:creationDateTime>
+                <aces:modificationDateTime>2025-07-21T19:31:48.75Z</aces:modificationDateTime>
+            </aces:dateTime>
+            <aces:uuid>urn:uuid:9e7ab74d-3ef8-497d-b20c-4e5c7c0499a2</aces:uuid>
+            <aces:systemVersion>
+                <aces:majorVersion>2</aces:majorVersion>
+                <aces:minorVersion>0</aces:minorVersion>
+                <aces:patchVersion>0</aces:patchVersion>
+            </aces:systemVersion>
+        </aces:pipelineInfo>
+        <aces:inputTransform applied="false">
+            <aces:description>ACEScct to ACES2065-1</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:CSC.Academy.ACEScct_to_ACES.a2.v1</aces:transformId>
+        </aces:inputTransform>
+        <aces:outputTransform applied="false">
+            <aces:description>Rec.2100 ST2084 (4000 nit) (D60 simulation)</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:Output.Academy.Rec2100-D60_4000nit_in_Rec2100-D65_ST2084.a2.v1</aces:transformId>
+        </aces:outputTransform>
+    </aces:pipeline>
+</aces:acesMetadataFile>

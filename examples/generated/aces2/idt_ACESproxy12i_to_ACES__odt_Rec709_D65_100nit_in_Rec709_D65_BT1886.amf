@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aces:acesMetadataFile xmlns:aces="urn:ampas:aces:amf:v2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdl="urn:ASC:CDL:v1.01" version="2.0">
+    <aces:amfInfo>
+        <aces:description>AMF for ACESproxy to ACES2065-1 with Rec.709 BT.1886</aces:description>
+        <aces:author>
+            <aces:name>AMF Generator Script</aces:name>
+            <aces:emailAddress>amf.generator@example.com</aces:emailAddress>
+        </aces:author>
+        <aces:dateTime>
+            <aces:creationDateTime>2025-07-21T19:31:48.56Z</aces:creationDateTime>
+            <aces:modificationDateTime>2025-07-21T19:31:48.56Z</aces:modificationDateTime>
+        </aces:dateTime>
+        <aces:uuid>urn:uuid:183c317d-e618-422b-bad9-497da9a4a99d</aces:uuid>
+    </aces:amfInfo>
+    <aces:pipeline>
+        <aces:pipelineInfo>
+            <aces:dateTime>
+                <aces:creationDateTime>2025-07-21T19:31:48.56Z</aces:creationDateTime>
+                <aces:modificationDateTime>2025-07-21T19:31:48.56Z</aces:modificationDateTime>
+            </aces:dateTime>
+            <aces:uuid>urn:uuid:b85f22f9-b324-4adb-a114-cdf05feca9f8</aces:uuid>
+            <aces:systemVersion>
+                <aces:majorVersion>2</aces:majorVersion>
+                <aces:minorVersion>0</aces:minorVersion>
+                <aces:patchVersion>0</aces:patchVersion>
+            </aces:systemVersion>
+        </aces:pipelineInfo>
+        <aces:inputTransform applied="false">
+            <aces:description>ACESproxy to ACES2065-1</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:CSC.Academy.ACESproxy12i_to_ACES.a2.v1</aces:transformId>
+        </aces:inputTransform>
+        <aces:outputTransform applied="false">
+            <aces:description>Rec.709 BT.1886</aces:description>
+            <aces:transformId>urn:ampas:aces:transformId:v2.0:Output.Academy.Rec709-D65_100nit_in_Rec709-D65_BT1886.a2.v1</aces:transformId>
+        </aces:outputTransform>
+    </aces:pipeline>
+</aces:acesMetadataFile>

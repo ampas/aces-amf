@@ -21,6 +21,7 @@ jobs:
 
     - name: Validate XML Files
       run: |
-        for file in examples/*.amf; do
-          xmllint --noout --schema schema/acesMetadataFile.xsd $file
+        shopt -s globstar
+        for file in examples/**/*.amf; do
+          xmllint --noout --schema schema/acesMetadataFile.xsd "$file"
         done
