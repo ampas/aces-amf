@@ -1,18 +1,49 @@
-## ACES Metadata File (AMF) ##
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright Contributors to the ACES Project. -->
 
-![AMF Schema and Example Validation](https://github.com/ampas/aces-amf/actions/workflows/validate-xml.yml/badge.svg) ![GitHub release (with filter)](https://img.shields.io/github/v/release/ampas/aces-amf) [![CLA assistant](https://cla-assistant.io/readme/badge/ampas/aces-amf)](https://cla-assistant.io/ampas/aces-amf)
+# ACES Metadata File (AMF)
 
-The ACES Metadata File ("AMF") is a sidecar XML file intended to exchange the metadata required to recreate ACES viewing pipelines. It describes the transforms necessary to configure an ACES viewing pipeline for a collection of related image files.
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) ![AMF Schema and Example Validation](https://github.com/ampas/aces-amf/actions/workflows/validate-xml.yml/badge.svg) ![GitHub release (with filter)](https://img.shields.io/github/v/release/ampas/aces-amf) [![CLA assistant](https://cla-assistant.io/readme/badge/ampas/aces-amf)](https://cla-assistant.io/ampas/aces-amf)
 
-This directory includes the ACES Metadata File XML Schema ([acesMetadataFile.xsd](./schema/acesMetadataFile.xsd)), dependency XML schemas and [example AMF files](./examples/).
+The ACES Metadata File (AMF) is an XML sidecar format for exchanging the metadata required to reconstruct ACES viewing pipelines. It specifies the transforms needed to configure an ACES pipeline for a set of related image files.
 
-Details of the ACES Metadata File format and its use cases can be found in [Academy Specification S-2019-001](https://aces.mp/S-2019-001).
+This directory includes:
 
-## License ##
-This project is licensed under the terms of the [LICENSE](./LICENSE.md) agreement.
+- The ACES Metadata File XML Schema: [acesMetadataFile.xsd](./schema/acesMetadataFile.xsd)
 
-## Contributing ##
-Thank you for your interest in contributing to our project. Before any contributions can be accepted, we require contributors to sign a Contributor License Agreement (CLA) to ensure that the project can freely use your contributions. You can find more details and instructions on how to sign the CLA in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+- Copies of dependent XML schemas
 
-## Support ## 
-For support, please visit [ACESCentral.com](https://acescentral.com)
+- [Example AMF files](./examples/)
+
+For details on the AMF format and its use cases, see the [ACES Documentation](https://docs.acescentral.com/amf/specification/).
+
+## Contributing
+
+ACES depends on community participation. Developers, manufacturers, and end
+users are encouraged to contribute code, bug fixes, documentation, and other
+technical artifacts.
+
+All contributors must have a signed Contributor License Agreement (CLA) on file
+to ensure that the project can freely use your contributions. 
+
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for more details.
+
+## Governance
+
+This repository is a submodule of the ACES project, hosted by the ASWF. Details
+about how the project operates can be found in the
+[GOVERNANCE.md](https://github.com/ampas/aces/blob/main/GOVERNANCE.md) file in
+the top-level ACES repository.
+
+## Reporting Issues
+
+To report a problem with Output Transfoms, please open an
+[issue](https://github.com/ampas/aces-output/issues).
+
+If the issue is senstive in nature or a security related issue, please do not
+report in the issue tracker. Instead refer to [SECURITY.md](SECURITY.md) for
+more information about the project security policy.
+
+## License
+
+The ACES Project is licensed under the [Apache 2.0 license](./LICENSE).
