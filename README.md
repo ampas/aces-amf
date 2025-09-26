@@ -37,8 +37,8 @@ the top-level ACES repository.
 
 ## Reporting Issues
 
-To report a problem with Output Transfoms, please open an
-[issue](https://github.com/ampas/aces-output/issues).
+To report a problem with AMF, please open an
+[issue](https://github.com/ampas/aces-amf/issues).
 
 If the issue is senstive in nature or a security related issue, please do not
 report in the issue tracker. Instead refer to [SECURITY.md](SECURITY.md) for
